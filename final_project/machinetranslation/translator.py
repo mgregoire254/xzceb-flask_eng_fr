@@ -10,7 +10,7 @@ apikey = os.environ['apikey']
 url = os.environ['url']
 
 #Authentication
-authenticator = IAMAuthenticator('0tg4E-rDltMvnAUt44xL_9GzldtVvW1OM4jxlSYyZUYm')
+authenticator = IAMAuthenticator({apikey})
 language_translator = LanguageTranslatorV3(
     version='2018-05-01',
     authenticator=authenticator
